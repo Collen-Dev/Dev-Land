@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Entertainment Page";
+}
+
+
+<div class="jumbotron">
+    <h2>Online Movies</h2>
+    <p class="lead">Please use the below search box to see the movies that are currently showing. Dont forget to like our facebook page.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<!-- Search Box -->
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark blue lighten-2 mb-4">
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <form class="form-inline mr-auto">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" type="submit">Search</button>
+        </form>
+
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<div id="MovieSearch" class="row">
+
+    <!-- Table Information -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Movie title</th>
+                <th scope="col">Director</th>
+                <th scope="col">Producer</th>
+                <th scope="col">Movie Info</th>
+                <th scope="col">Created Date</th>
+            </tr>
+        </thead>
+        <tbody id="Movie-Info-From-Service">
+            <tr id="Search-Result-Status">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>No records to show. Please Search</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
